@@ -1,0 +1,169 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f0; /* 米白色背景 */
+}
+
+header {
+    background-color: #d6d6c2; /* 稍深的米白色 */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #4d4d4d; /* 深灰色文字 */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1a1a1a;
+}
+
+main {
+    padding-top: 80px; /* Adjust based on your header height */
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    background-color: #ffffff; /* 纯白色背景 */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+
+.avatar {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.hero-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #4d4d4d; /* 深灰色标题 */
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #d6d6c2; /* 稍深的米白色边框 */
+    padding-bottom: 0.5rem;
+}
+
+.content {
+    background-color: #ffffff; /* 纯白色背景 */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.content h2 {
+    border-bottom: 2px solid #d6d6c2; /* 稍深的米白色边框 */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 0.5rem;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d6d6c2; /* 稍深的米白色边框 */
+}
+
+button {
+    background-color: #d6d6c2; /* 稍深的米白色 */
+    color: #4d4d4d; /* 深灰色文字 */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c2c2a3; /* 鼠标悬停时稍微深一点 */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #d6d6c2; /* 稍深的米白色 */
+    color: #4d4d4d; /* 深灰色文字 */
+    font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image, .hero-content {
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+}
